@@ -30,7 +30,11 @@ The project's data cleaning phase was comprehensive, involving several steps to 
 - **Country Data Standardization:** Country names were corrected and standardized.
 - **Salary Conversion:** Salaries were converted into USD using country-specific conversion rates to ensure consistent financial analysis.
 
+### Findings
+The analysis uncovers key salary trends influenced by location, age, experience, industry, and job title. It highlights geographical salary variations and a positive correlation between age/experience and earnings. Some industries prioritize practical skills over formal education, impacting compensation. Certain job titles command higher pay due to specialized roles. Overall, the findings emphasize the complex interplay of these factors in determining salaries.
+
 ### XGBoost Model for Salary prediction:
+Chosen for its capability to capture complex relationships within the data.
 Hold-out Test Set Performance
 - **Hold-out Test Set MSE:** The MSE on the hold-out test set is approximately 446 million, which is slightly better (lower) than the mean CV MSE. This suggests that the model generalizes well to unseen data, at least regarding the MSE metric.
 - **Hold-out Test Set R-Square (R²):** The R² value of 0.602 indicates that the model explains about 60.22% of the salary variance. This is a decent level of predictive power, suggesting the model has learned meaningful patterns from the features that contribute to salary prediction.
