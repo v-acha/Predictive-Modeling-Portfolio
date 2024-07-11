@@ -7,3 +7,8 @@ Welcome to the Data Science Project repository! This repository showcases my exp
    - **Description:** This project entails analyzing salary data gathered from a TikTok survey to predict salary amounts based on various categories and gender, using specific variables as predictors.
    - **Technologies Used:** The notebooks uses Pandas, NumPy, Matplotlib and Seaborn for data analysis and visualizations. XGBoost for salary prediction and Random Classification for gender prediction.
    - **Results:** The XGBoost regression model achieved an R-squared of 0.60 for predicting salary amounts and The Random Classification model achieved an accuracy of 0.81 for predicting gender.
+
+2.[Shoe Price Prediction]()
+   - **Description:** This project involves analyzing shoe price data from datafiniti to predict average prices based on various categories and conditions using specific variables as predictors.
+   - **Technologies Used:** The notebooks use Pandas and NumPy for data manipulation, Matplotlib and Seaborn for data visualization, and Scikit-learn for applying PCA and building Random Forest regression, Linear regression, and Ridge regression models.
+   - **Results:** The Ridge regression model, incorporating all three features (prices.amountMin, prices.amountMax, and avg_price), achieved the lowest MAE of 0.0106, effectively predicting shoe prices with high accuracy. The Linear regression model had a higher MAE of 7.1357, while the Random Forest regression model achieved an MAE of 0.07153.
