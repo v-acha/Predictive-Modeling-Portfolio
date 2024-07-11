@@ -1,5 +1,5 @@
 # Project Overview: Predictive Pricing Model
-![alt text](image-3.png)
+![image](https://github.com/v-acha/Data_Science_Projects/assets/166547727/c0cb5c5d-7021-4cb3-86d4-bf2f60789bea)
 
 ## Introduction
 This document provides an overview of the data cleaning, exploratory data analysis (EDA), feature engineering, and modeling processes used to develop a predictive pricing model. The aim is to estimate the prices of products based on various features. 
