@@ -1,0 +1,4 @@
+TikTok_Salary_Survey/Data/*.csv filter=lfs diff=lfs merge=lfs -text
+shoe_price_prediction/Data/*.csv filter=lfs diff=lfs merge=lfs -text
+fire_prediction/model_evaluation/*.pkl filter=lfs diff=lfs merge=lfs -text
+fire_prediction/model_evaluation/*.tar.gz filter=lfs diff=lfs merge=lfs -text
