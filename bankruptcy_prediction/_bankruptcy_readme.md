@@ -11,8 +11,6 @@ Predicting company bankruptcy is a high-stakes financial task with implications 
 ---
 
 # Data & Preprocessing
-![alt text](images/bankruptcy-dataflow.png)
-
 ## Project Overview
 
 - **Prediction Target:** Binary classification – Bankrupt vs. Non-Bankrupt.
@@ -28,7 +26,7 @@ Predicting company bankruptcy is a high-stakes financial task with implications 
 
 ![alt text](images/image-9.png)
 ## Preprocessing Pipeline
-
+![alt text](images/bankruptcy-dataflow.png)
 ### Stage 1: Ingest
 - Adjusted feature scales via standardization (z-score) using training set stats.
 - Filtered correlated features (Pearson r > 0.9), reducing to 76 features.
