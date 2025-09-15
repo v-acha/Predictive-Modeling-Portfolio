@@ -11,6 +11,7 @@ Predicting company bankruptcy is a high-stakes financial task with implications 
 ---
 
 # Data & Preprocessing
+![alt text](images/bankruptcy-dataflow.png)
 
 ## Project Overview
 
@@ -161,7 +162,7 @@ Predicting company bankruptcy is a high-stakes financial task with implications 
 - XGBoost
 - LightGBM
 - Balanced Random Forest
-
+![alt text](images/bankruptcy-baseline-confmatrix.png)
 ## Training Details
 
 - Batch size: 32 (for Keras models)
