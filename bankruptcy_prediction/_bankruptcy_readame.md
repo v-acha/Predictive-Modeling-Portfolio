@@ -25,7 +25,7 @@ Predicting company bankruptcy is a high-stakes financial task with implications 
 - 95 original financial features (ratios and indicators).
 - Excludes financial sector firms to avoid structural bias.
 
-![alt text](image-9.png)
+![alt text](images/image-9.png)
 ## Preprocessing Pipeline
 
 ### Stage 1: Ingest
@@ -176,14 +176,14 @@ Predicting company bankruptcy is a high-stakes financial task with implications 
 - Accuracy alone is misleading due to imbalance.
 
 ### Hyperparameter Tuning
-![alt text](image-5.png)
+![alt text](images/image-5.png)
 
 ### Results
-![alt text](image-6.png)
-![alt text](image-7.png)![alt text](image-8.png)
+![alt text](images/image-6.png)
+![alt text](images/image-7.png)![alt text](images/image-8.png)
 ### Final Model Selection
 
-![alt text](image-4.png)
+![alt text](images/image-4.png)
 - **Best Model:** Balanced Random Forest (after hyperparameter tuning)
   - Accuracy: 90%
   - Recall (Bankrupt): 86%
@@ -192,7 +192,7 @@ Predicting company bankruptcy is a high-stakes financial task with implications 
   - F1-score (Bankrupt): 0.41
 
 ### Interpretability
-![alt text](image-1.png)
+![alt text](images/image-1.png)
 - Top Features:
   - Total Debt/Net Worth
   - Persistent EPS (4 seasons)
@@ -201,7 +201,7 @@ Predicting company bankruptcy is a high-stakes financial task with implications 
   - Equity to Liability
 
 ### Error Analysis
-![alt text](image-3.png)
+![alt text](images/image-3.png)
 - False Positives: Companies incorrectly flagged as bankrupt.
 - False Negatives: 8 missed bankruptcies – small but critical.
 - Misclassification costs discussed in conclusions.

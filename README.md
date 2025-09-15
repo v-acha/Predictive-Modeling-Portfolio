@@ -1,4 +1,4 @@
-![image](https://github.com/v-acha/Data_Science_Projects/assets/166547727/45241d56-80c7-4206-857c-d7468ebfdca0)
+![alt text](image.png)
 
 # Predictive Modeling Projects
 Welcome to the Data Science Project repository! This repository contains some of my datascience projects. They each offer insights and analyses across diverse domains. My projects range from exploratory data analysis to predictive modeling and machine learning applications, all aimed at solving problems, and driving informed decision-making and furthering my skill set. Each dataset is chosen based on my interests and the skills I want to learn.

@@ -1,4 +1,5 @@
 # FireGuard - Wildfire Ignition Prediction with Machine Learning
+![alt text](images/image-1.png)
 ## Introduction
 Introduction
 Wildfires are becoming more frequent, severe, and unpredictable, fueled by climate change, prolonged droughts, and human expansion into fire-prone areas. Traditional management systems such as NASA’s FIRMS are highly effective at detecting active fires in real time, but they remain reactive—fires are only flagged after ignition. By that point, communities and ecosystems are already at risk, and managers have limited options for prevention.
@@ -8,6 +9,7 @@ This project, FireGuard, was developed as part of my capstone in collaboration w
 The result is a prototype wildfire risk prediction system that generates daily ignition risk maps for California. Instead of asking “Where is fire burning now?” FireGuard shifts the focus to “Where might fire start next?” By achieving high recall with balanced precision, the models provide early warnings that prioritize prevention over reaction. While not perfect, the system demonstrates the potential for machine learning to support proactive wildfire management and resource allocation.
 
 # FireGuard - Data & Preprocessing
+![alt text](images/fireguard_pipeline.png)
 ## Project Overview
 FireGuard predicts **where new wildfires are likely to ignite next** by learning from historical satellite detections and up‑to‑date environmental conditions. We integrated NASA FIRMS active‑fire detections with ERA5 reanalysis weather to produce an analysis‑ready dataset for modeling daily ignition risk at a 0.25° grid.
 
@@ -239,7 +241,7 @@ We evaluated models on **Precision, Recall, F1‑score, Accuracy, and AUC**. Thi
 > **So what?** In fire prediction, **high Recall** matters most: missing a fire can have catastrophic consequences. Precision matters as well, but operationally false alarms are safer than missed ignitions.
 
 ### LightGBM Baseline
-![alt text](image-1.png)
+![alt text](images/lightgbm_confmatrix.png)
 - **Precision:** 0.4569  
 - **Recall:** 0.9443  
 - **AUC:** 0.9396  
@@ -255,7 +257,7 @@ Across ~8M test samples:
 - **Balanced TabNet:** ~889k fires correctly flagged (TP), ~44k missed (FN), ~1M false alarms (FP), ~6.1M true negatives (TN).  
 - This confirms a **safety‑first trade‑off**: we catch nearly all fires, at the expense of false positives.  
 
-![alt text](image-2.png)
+![alt text](images/tabnet_bal_confmatrix.png)
 
 ### Feature Importance & Insights
 Plots showed that the most important predictors were:
@@ -268,8 +270,11 @@ Plots showed that the most important predictors were:
 ### Misclassifications
 - **False Positives:** Often in regions with high fuel load and favorable conditions, but no ignition observed. These are “near‑miss” situations - conditions looked like fire, but no ignition occurred.
 - **False Negatives:** Rare; often linked to satellite gaps (cloud cover, overpass timing).  
+![alt text](images/image-2.png)
 - **Probability Distribution:** Misclassified positives were often assigned **high predicted probabilities (>0.8)**, indicating the model was confident but wrong in areas that resembled fire conditions.
+![alt text](images/misclassified-fire.png)
 - **Spatial Distribution:** Most errors clustered in California’s **wildland–urban interface (WUI)**, consistent with human ignition hotspots.
+![alt text](images/spatial-distr.png)
 
 ### Real‑World Meaning
 - **High Recall (>0.94):** Very few fires missed; strong candidate for operational early warning.  
