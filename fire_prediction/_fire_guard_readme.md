@@ -297,7 +297,7 @@ Balanced TabNet proved the most actionable: high Recall, tolerable Precision, in
 This project brought together a mix of cloud infrastructure, data engineering, machine learning, and visualization tools.  
 
 ### Cloud & Infrastructure  
-- **AWS S3** for large-scale data storage and management  
+- **AWS S3 & EC2** for large-scale data storage and management  
 - **AWS Lambda** & **Step Functions** for automated pipelines  
 - **AWS SageMaker** for training and deploying ML models  
 

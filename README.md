@@ -12,11 +12,11 @@ Welcome to the Data Science Project repository! This repository contains some of
    - **Description:** - This project involves analyzing shoe price data from datafiniti to predict average prices based on various categories and conditions using specific variables as predictors.
    - **Technologies Used:** - The notebooks use Pandas and NumPy for data manipulation, Matplotlib and Seaborn for data visualization, and Scikit-learn for applying PCA and building Random Forest regression, Linear regression, and Ridge regression models.
    - **Results:** - The Ridge regression model, incorporating all three features (prices.amountMin, prices.amountMax, and avg_price), achieved the lowest MAE of 0.0106, effectively predicting shoe prices with high accuracy. The Linear regression model had a higher MAE of 7.1357, while the Random Forest regression model achieved an MAE of 0.07153.
-3. [Wildfire Ignition Risk Prediction (FireGuard)](https://github.com/v-acha/Data_Science_Projects/tree/main/shoe_price_prediction)
+3. [Wildfire Ignition Risk Prediction (FireGuard)](https://github.com/v-acha/Predictive-Modeling-Portfolio/tree/main/fire_prediction)
    - **Description** - This project forecasts where wildfires are most likely to ignite across California using 12 years of historical fire detections and daily environmental data. The goal is to produce forward-looking risk maps that support proactive wildfire prevention.
    - **Technologies Used** - The notebook uses AWS, Sagemaker notebook, sagemaker endpoins, cloud watch, s3bucket, Pandas, NumPy, Matplotlib, Seaborn for EDA and Scikit-learn, XGBoost, Tabnet, SHAP for modeling.
    - **Results** - The final model achieved strong performance with an ROC AUC of **0.91** and identified key risk drivers like temperature, humidity, and vegetation dryness. FireGuard outputs **daily spatial ignition risk maps** to guide early intervention and reduce fire spread.
-4. [Corporate Bankruptcy Prediction](https://github.com/v-acha/Data_Science_Projects/tree/main/shoe_price_prediction)
+4. [Corporate Bankruptcy Prediction](https://github.com/v-acha/Data_Science_Projects/tree/main/bankruptcy_prediction)
    - **Description** - This project focuses on predicting whether a company will go bankrupt based on financial indicators. The model aims to improve early identification of at-risk firms, addressing a highly imbalanced classification task.
    - **Technologies Used** - 
       - **Modeling & Preprocessing:** Scikit-learn, TensorFlow (Keras), XGBoost, LightGBM  
